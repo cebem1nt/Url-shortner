@@ -1,0 +1,93 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+::placeholder{
+    color: black;
+}
+body{
+    background-color: black;
+}
+.description p{
+    font-size: x-large;
+}
+.main{
+    position: relative;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 5%;
+    width: 50vh;
+    height: 55vh;
+    margin: 10vh auto 0 auto;
+    padding: 2rem;
+}
+@media only screen and (max-width: 400px){
+    .main{
+        margin-top: 5vh;
+        height: 400px;
+        width: fit-content;
+        padding: 1.5rem;
+    }
+    .output{
+        padding-top: 10%;
+        height: 5vh;
+    }
+}
+.info-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-buttons{
+    width: 100%;
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.buttons-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1vh;
+}
+.buttons-holder button{
+    padding: 2% 5% 2% 5%;
+    color: black ;
+    width: 80%;
+    transition: linear 0.15s;
+}
+.buttons-holder button:hover{
+    color: rgba(78, 211, 122, 0.842);
+    box-shadow: rgba(78, 211, 122, 0.842) 0px 0 15px;
+}
+.input-wrap{
+    display: flex;
+    justify-content:center ;
+    margin-bottom: 2vh;
+}
+.input-wrap input{
+    border: 0;
+    width: 100%;
+    padding: 2% 0 2% 0;
+    text-align: center;
+    color: black;
+    border-radius: 1.5vh;
+}
+.holder{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.output input{
+    border: 0;
+    width: 100%;
+    height: 150%;
+    padding: 2% 0 2% 0;
+    text-align: center;
+    color: black;
+    border-radius: 1px;
+}
